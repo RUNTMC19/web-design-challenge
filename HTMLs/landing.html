@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Design Challenge</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="style1.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="landing.html">City Weather</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="max_temp.html">Max Temperatures</a></li>
+              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <a class="nav-link active" aria-current="page" href="comparisons.html">Comparison</a>
+        </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-7">
+
+      <br>
+      <h3>Latitude vs. Weather </h3>
+      <hr>
+      <img class="left-image" src="../Instructions/Resources/assets/images/Fig1.png">
+      <br>
+      <hr>
+      
+      <br>
+      <p>
+      In this project, an analysis was conducted to see how much weeather changes at coordinates either nearest or farthest from the equator. In order to perform
+      this analysis, we used the OpenWeather API to pull data and assemble a dataset from over 500 cities across the world.
+
+      <br>
+      </p>
+    After running the dataset in Pandas, we used MatPlotLib to plot specific weather aspects versus all the latitude coordinates. From the API,
+    we selected cloudiness, max temperature, humidity, and wind speed as the traits. Using those columns, we created
+    visualizations for the analysis, in addition to descriptions of any trends that appeared. 
+      <br>
+
+    </div>
+
+    <div class="col-md-5">
+
+      <br>
+
+      <h3>Visualizations</h3>
+      <hr>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <img class="right-images" src="../Instructions/Resources/assets/images/Fig1.png">
+        </div>
+
+        <div class="col-md-6">
+          <img class="right-images" src="../Instructions/Resources/assets/images/Fig2.png">
+        </div>
+
+        <div class="col-md-6">
+          <img class="right-images" src="../Instructions/Resources/assets/images/Fig3.png">
+        </div>
+
+        <div class="col-md-6">
+          <img class="right-images" src="../Instructions/Resources/assets/images/Fig4.png">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+</body>
+
+</html>
